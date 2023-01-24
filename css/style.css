@@ -1,0 +1,288 @@
+
+@import url(font.css);
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Raleway-Regular';
+}
+
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+nav{
+    background: #0C0C0C;
+    border-bottom: 1px solid white;
+}
+
+.nav__navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav__navigation-mini{
+    display: flex;
+    align-items: center;
+}
+
+
+.nav__mini-title{
+    color: white;
+    margin-left: 5px;
+    font-family: 'Roboto-Regular';
+    line-height: 18px;
+}
+
+.ul__list{
+    display: flex;
+    padding: 20px 0;
+}
+
+
+.ul__list-link{
+    color: white;
+    margin-left: 20px;
+    font-family: 'Roboto-Regular';
+    line-height: 18px;
+}
+
+.ul__link{
+    margin-left: 0;
+    padding: 22px 14px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+
+.ul__link:hover{
+    background: rgba(105, 207, 23, 0.75);
+}
+
+
+.ul__menu{
+    padding: 0;
+}
+
+
+
+.header{
+    background: url(../img/header__bg.jpg) no-repeat center/cover;
+    height: 100vh;
+}
+
+h1{
+    color: #69CF17;
+    padding: 167px 0 18px;
+    font-size: 72px;
+    font-family: 'Raleway-Black';
+    line-height: 84px;
+}
+
+h3{
+    padding-bottom: 18px;
+    color: #69CF17;
+    font-size: 36px;
+    line-height: 17px;
+}
+
+
+.header__text{
+    font-family: 'Raleway-Regular';
+    color: white;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 30px;
+}
+
+
+
+.header__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__box-link{
+    padding: 33px 76px;
+    background: rgba(105, 207, 23, 0.5);
+    color: white;
+    font-size: 50px;
+    font-family: 'Raleway-Thin';
+    display: inline-block;
+}
+
+.header__box-link2{
+    background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    border-radius: 6px;
+    padding: 15px 70px;
+    color: white;
+}
+
+
+.box{
+    background: #0C0C0C;
+    height: 48px;
+}
+
+.menu{
+    background: #292929;
+}
+
+.menu__ul{
+    display: flex;
+    column-gap: 30px;
+    margin-left: 21px;
+}
+
+.menu__ul-list{
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.menu__ul-list::before{
+    content:"";
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    height: 3px;
+    background: white;
+    transition: 0.5s;
+}
+
+.menu__ul-list:hover::before{
+    width: 100%;
+}
+
+.card{
+    max-width: 370px;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 15px;
+    background: #0C0C0C;
+    color: white;
+}
+
+.card__icon{
+    position: relative;
+}
+
+.card__icon-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background: rgba(105, 207, 23, 0.9);
+    opacity: 0;
+}
+
+.card__icon-link:hover{
+    opacity: 1;
+}
+
+.card__icon-img{
+    display: block;
+    width: 100%;
+}
+
+.fal{
+    color: white;
+}
+
+.card__icon-tittle{
+    padding: 15px 0;
+    line-height: 15px;
+    font-family: 'Raleway-Bold';
+    font-size: 19px;
+}
+
+.card__icon-subtittle{
+    font-size: 19px;
+    line-height: 25px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+.main{
+    background: #393636;
+}
+
+.block__title{
+    text-align: center;
+    background: white;
+    padding: 20px 0;
+    font-family: 'Raleway-Bold';
+    font-size: 50px;
+    line-height: 40px;
+    color:#69CF17;
+   }
+   
+   .footer{
+    background:linear-gradient(180deg, #000000 0%, rgb(114 255 0 / 90%) 200%)
+   }
+   
+   .footer__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 81px;
+   }
+   
+   .footer__box-number{
+    color: white;
+    font-family: 'Roboto-Bold';
+    line-height: 24px;
+    font-style: 20px;
+   }
+   
+   .footer__list{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    padding-bottom: 81px;
+   }
+   
+   .footer__list-link{
+    color: white;
+    font-style: 20px;
+    line-height: 24px;
+    font-family: 'Roboto-Regular';
+   }
+   
+   .footer__line{
+    background: #1A3406;
+   }
+   
+   .footer__line-text{
+    padding: 19px 0;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto-Regular';
+   }
+
+
+
